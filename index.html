@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Developer Portfolio</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/switch.css">
+</head>
+<body>
+    <main>
+        <!-- Adds a switch to the page -->
+        <style>
+            .alone-object {
+                padding-top: 35vh;
+                padding-bottom: 50vh;
+            }
+        </style>
+        <div class="alone-object">
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <label class="switch">
+                    <input type="checkbox" onclick="scrollDown()">
+                    <div class="button">
+                        <div class="light"></div>
+                        <div class="dots"></div>
+                        <div class="characters"></div>
+                        <div class="shine"></div>
+                        <div class="shadow"></div>
+                    </div>
+                </label>
+            </div>
+        </div>
+
+        <script>
+            function scrollDown() {
+                window.scrollTo({
+                    top: document.body.scrollHeight,
+                    duration: 5000, // Adjust the duration to make the scroll slower (in milliseconds)
+                    behavior: 'smooth'
+                });
+            }
+        </script>
+
+
+
+
+
+        <section>
+            <h1>Howdy! I'm Elijah Morgan...</h1>
+            <p>a Computer Science & Mathematics student at Grand Valley State university, a varied hobbist, and jack of all trades.</p>
+        </section>
+        
+
+        <section>
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <h3>Portfolio Website</h3>
+                    <p>A Github Pages website to display my current and past projects written in HTML/CSS and javascript. As this page is developed I aim to include more advanced features.</p>
+                </li>
+                <li>
+                    <h3>Chatbot Desktop App</h3>
+                    <p>A serverless Python desktop applicaiton utilizing the OpenAI GPT-3.5 API and Pyrebase databasing and account features to offer a personalized user experience. Currently missing some features, but I'm currently planning on revisting this project.</p>
+                </li>
+                <!-- Add more projects as needed -->
+            </ul>
+        </section>
+
+        <section>
+            <h2>Contact Me</h2>
+            <a href="mailto:morgaeli@mail.gvsu.edu">morgaeli@mail.gvsu.edu</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Elijah Morgan</p>
+    </footer>
+</body>
+</html>
 

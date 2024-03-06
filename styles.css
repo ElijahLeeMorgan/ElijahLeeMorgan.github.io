@@ -1,0 +1,62 @@
+/* FILEPATH: /workspaces/ElijahLeeMorgan.github.io/style.css */
+
+/*Color Theme, darkest to lightest.
+#F77F00 On second thought, this is too dark chocolate for the background. Might try jet black.
+#003049
+#D62828
+
+#FCBF49
+#EAE2B7
+
+Maybe I do a terminal style, as you scroll the text appears? amber on black? Do I add raycast lines?
+
+power button, forces scroll down to intro
+v
+amber crt with intro text, see css filters for crt effect
+v manual scroll to next section
+desk, hover over to see projects..?
+v mnauel scroll to next section
+contact info, nothing crazy here
+v
+easter egg, hover over to see a picture of my dogs? 
+v
+scroll to top button
+*/
+
+/* Reset default styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a default font and background color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #5a585e;
+}
+
+section {
+    background-color: #a1a1a1;
+    color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+
+}
+
+/* Add some basic styling to headings */
+h1, h2, h3 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+/* Add some padding and a border to images */
+img {
+    padding: 10px;
+    border: 1px solid #000000;
+}
+
+/* Add some spacing between paragraphs */
+p {
+    margin-bottom: 10px;
+}
