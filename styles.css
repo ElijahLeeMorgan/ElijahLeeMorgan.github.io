@@ -10,13 +10,16 @@
 
 Maybe I do a terminal style, as you scroll the text appears? amber on black? Do I add raycast lines?
 
+NEW IDEA: surgeprotector with a power button, cable goes down onright side to monitor, forces scroll down to intro
 power button, forces scroll down to intro
 v
 amber crt with intro text, see css filters for crt effect
 v manual scroll to next section
 desk, hover over to see projects..?
-v mnauel scroll to next section
-contact info, nothing crazy here
+v manual scroll to next section 
+BETTER IDEA: User types in commands to see projects/contacts
+
+contact info, nothing crazy here..? Another CRT?
 v
 easter egg, hover over to see a picture of my dogs? 
 v
@@ -31,8 +34,13 @@ body {
 
 /* Set a default font and background color */
 body {
-    font-family: Arial, sans-serif;
     background-color: #5a585e;
+    color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-image: url(../textures/stardust.png);
+    background-repeat: repeat;
 }
 
 section {
