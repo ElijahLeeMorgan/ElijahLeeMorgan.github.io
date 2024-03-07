@@ -56,6 +56,14 @@
   top: 0;
 }
 
+
+.switch:hover {
+  content: "";
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2), 0 0 1px 2px black, inset 0 2px 2px -2px white, inset 0 0 2px 15px #8c8692, inset 0 0 2px 22px black;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
 .switch .button::after {
   content: "";
   background-image: linear-gradient(#650000, #320000);

@@ -60,3 +60,12 @@ img {
 p {
     margin-bottom: 10px;
 }
+
+.alone-object {
+    padding-top: 35vh;
+    padding-bottom: 50vh;
+    display: flex; 
+    justify-content: center; 
+    align-items: 
+    center;
+}

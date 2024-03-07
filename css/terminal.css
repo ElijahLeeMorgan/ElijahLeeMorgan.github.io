@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Monocraft';
+    src: url('../fonts/Monocraft/Monocraft.ttf') format('truetype'),
+         url('../fonts/Monocraft/Monocraft.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Miracraft';
+    src: url('../fonts/Miracraft/Miracraft.ttf') format('truetype');
+}
+
+.screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.terminal {
+    background-color: black;
+    color: orangered;
+    padding: 20px;
+    margin: 20px;
+    height: 920px;
+    width: 1420px;
+    font-family: Monocraft, Miracraft, monospace;
+    font-size: 22px;
+    line-height: 1.5;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 69, 0, 0.5);
+}
+
+.terminal::before {
+    content: "Elijah@LenovoT540p ~ %";
+}
+
+.terminal::after {
+    content: ">_";
+}

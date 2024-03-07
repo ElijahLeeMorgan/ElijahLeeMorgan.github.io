@@ -6,18 +6,14 @@
     <title>Software Developer Portfolio</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./css/switch.css">
+    <link rel="stylesheet" href="./css/terminal.css">
 </head>
 <body>
     <main>
-        <!-- Adds a switch to the page -->
-        <style>
-            .alone-object {
-                padding-top: 35vh;
-                padding-bottom: 50vh;
-            }
-        </style>
-        <div class="alone-object">
-            <div style="display: flex; justify-content: center; align-items: center;">
+        <!-- Add a texture of a metal plate or homemade 80's toggle board with a taped on note syaing 'click me'-->
+        <!-- Adds a scroll switch to the page -->
+        <div>
+            <div class="alone-object">
                 <label class="switch">
                     <input type="checkbox" onclick="scrollDown()">
                     <div class="button">
@@ -29,28 +25,48 @@
                     </div>
                 </label>
             </div>
+            <script>
+                function scrollDown() {
+                    const duration = 5000; // Total duration of the scroll animation in milliseconds
+                    const start = performance.now(); // Start time of the animation
+                    const scrollDistance = document.body.scrollHeight * 0.25 + 500; // Scroll distance as a fraction of the total height
+
+                    function animateScroll(timestamp) {
+                        const elapsed = timestamp - start; // Elapsed time since the animation started
+                        const progress = Math.min(elapsed / duration, 1); // Progress of the animation (between 0 and 1)
+                        const easeProgress = easeOutQuad(progress); // Apply easing function to the progress
+
+                        window.scrollTo({
+                            top: scrollDistance * easeProgress,
+                            behavior: 'smooth'
+                        });
+
+                        if (elapsed < duration) {
+                            requestAnimationFrame(animateScroll); // Continue the animation
+                        }
+                    }
+
+                    function easeOutQuad(t) {
+                        return t * (2 - t); // Quadratic easing function
+                    }
+
+                    setTimeout(() => {
+                        requestAnimationFrame(animateScroll); // Start the animation
+                    }, 800);
+                }
+            </script>
         </div>
 
-        <script>
-            function scrollDown() {
-                window.scrollTo({
-                    top: document.body.scrollHeight,
-                    duration: 5000, // Adjust the duration to make the scroll slower (in milliseconds)
-                    behavior: 'smooth'
-                });
-            }
-        </script>
-
-
-
-
-
-        <section>
-            <h1>Howdy! I'm Elijah Morgan...</h1>
-            <p>a Computer Science & Mathematics student at Grand Valley State university, a varied hobbist, and jack of all trades.</p>
-        </section>
+        <div class="alone-object">
+            <div class="terminal">
+                Howdy! I'm Elijah Morgan.
+                <br>
+                A Computer Science & Mathematics student at Grand Valley State University, a varied hobbyist, and overall jack of all trades.
+                <br>
+            </div>
+        </div>
         
-
+        <!-- WIP -->
         <section>
             <h2>Projects</h2>
             <ul>
