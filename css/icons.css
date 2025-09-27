@@ -1,0 +1,126 @@
+/* Additional CSS for enhanced SVG icons and graphics */
+
+/* Enhanced avatar styling */
+.avatar-icon {
+    width: 120px;
+    height: 120px;
+    color: var(--color-gray-300);
+    transition: var(--transition-normal);
+}
+
+.avatar-placeholder:hover .avatar-icon {
+    transform: scale(1.05);
+    color: var(--color-primary);
+}
+
+/* Project placeholder enhancements */
+.project-placeholder {
+    width: 100px;
+    height: 100px;
+    color: var(--color-gray-300);
+    transition: var(--transition-normal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-placeholder svg {
+    width: 80px;
+    height: 80px;
+}
+
+.project-card:hover .project-placeholder {
+    color: var(--color-primary);
+    transform: scale(1.1);
+}
+
+/* Icon animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); }
+}
+
+.project-placeholder svg {
+    animation: float 4s ease-in-out infinite;
+}
+
+.project-card:nth-child(2) .project-placeholder svg {
+    animation-delay: -1s;
+}
+
+.project-card:nth-child(3) .project-placeholder svg {
+    animation-delay: -2s;
+}
+
+/* Custom gradient definitions for better color consistency */
+.gradient-primary {
+    background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary-dark));
+}
+
+.gradient-secondary {
+    background: linear-gradient(135deg, var(--color-secondary), #E64A19);
+}
+
+/* Enhanced icon hover states */
+.education-icon svg,
+.contact-link svg {
+    transition: var(--transition-fast);
+}
+
+.education-card:hover .education-icon svg {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.contact-link:hover svg {
+    transform: scale(1.15);
+    filter: brightness(1.1);
+}
+
+/* Icon color variations for visual interest */
+.timeline-item:nth-child(1) .timeline-marker {
+    background-color: var(--color-primary);
+}
+
+.timeline-item:nth-child(2) .timeline-marker {
+    background-color: var(--color-success);
+}
+
+.timeline-item:nth-child(3) .timeline-marker {
+    background-color: var(--color-warning);
+}
+
+/* Responsive icon sizing */
+@media (max-width: 768px) {
+    .brand-icon {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .avatar-icon {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .project-placeholder svg {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .education-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Dark mode support for icons (future enhancement) */
+@media (prefers-color-scheme: dark) {
+    .avatar-icon,
+    .project-placeholder {
+        color: var(--color-gray-500);
+    }
+    
+    .project-card:hover .project-placeholder,
+    .avatar-placeholder:hover .avatar-icon {
+        color: var(--color-primary-light);
+    }
+}

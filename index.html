@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entry-level Software Engineer Portfolio - Clean, minimalist design showcasing skills, projects, and experience">
+    <meta name="keywords" content="software engineer, portfolio, entry level, web developer, full stack, javascript, react, node.js, python">
+    <meta name="author" content="Software Engineer">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#2196f3">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.github.io/">
+    <meta property="og:title" content="Software Engineer | Portfolio">
+    <meta property="og:description" content="Entry-level Software Engineer Portfolio - Clean, minimalist design showcasing skills, projects, and experience">
+    <meta property="og:image" content="https://example.github.io/assets/og-image.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://example.github.io/">
+    <meta property="twitter:title" content="Software Engineer | Portfolio">
+    <meta property="twitter:description" content="Entry-level Software Engineer Portfolio showcasing projects and skills">
+    <meta property="twitter:image" content="https://example.github.io/assets/twitter-image.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="preload" href="./css/main.css" as="style">
+    
+    <title>Software Engineer | Portfolio</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/icons.css">
+    <link rel="stylesheet" href="./css/accessibility.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main id="main-content" role="main">
+        <!-- Hero/About Section -->
+        <section id="about" class="hero" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 id="hero-title" class="hero-title">
+                            <span class="hero-greeting">Hello, I'm</span>
+                            <span class="hero-name">Software Engineer</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Entry-level developer passionate about creating clean, efficient solutions 
+                            and bringing ideas to life through code.
+                        </p>
+                        <div class="hero-cta">
+                            <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                        </div>
+                    </div>
+                    <div class="hero-avatar">
+                        <div class="avatar-placeholder">
+                            <svg viewBox="0 0 100 100" class="avatar-icon">
+                                <defs>
+                                    <linearGradient id="avatarGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="var(--color-primary-light)"/>
+                                        <stop offset="100%" stop-color="var(--color-primary)"/>
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="50" cy="35" r="18" fill="url(#avatarGradient)" opacity="0.9"/>
+                                <circle cx="50" cy="35" r="15" fill="currentColor" opacity="0.1"/>
+                                <path d="M50 58c-16 0-28 8-28 22h56c0-14-12-22-28-22z" fill="url(#avatarGradient)" opacity="0.9"/>
+                                <circle cx="42" cy="32" r="2" fill="white"/>
+                                <circle cx="58" cy="32" r="2" fill="white"/>
+                                <path d="M45 42c2 3 8 3 10 0" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Section -->
+        <section id="career" class="section">
+            <div class="container">
+                <h2 class="section-title">Career Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Junior Software Developer</h3>
+                            <p class="timeline-company">Tech Company</p>
+                            <p class="timeline-period">2024 - Present</p>
+                            <ul class="timeline-description">
+                                <li>Developed and maintained web applications using React and Node.js</li>
+                                <li>Collaborated with cross-functional teams in Agile environment</li>
+                                <li>Implemented responsive designs and improved user experience</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Software Development Intern</h3>
+                            <p class="timeline-company">Startup Inc.</p>
+                            <p class="timeline-period">Summer 2023</p>
+                            <ul class="timeline-description">
+                                <li>Built RESTful APIs and database schemas</li>
+                                <li>Participated in code reviews and testing processes</li>
+                                <li>Contributed to open-source projects</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="education-grid">
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
+                            </svg>
+                        </div>
+                        <h3 class="education-degree">Bachelor of Science in Computer Science</h3>
+                        <p class="education-school">University Name</p>
+                        <p class="education-period">2020 - 2024</p>
+                        <ul class="education-details">
+                            <li>GPA: 3.8/4.0</li>
+                            <li>Relevant Coursework: Data Structures, Algorithms, Web Development</li>
+                            <li>Dean's List: Fall 2022, Spring 2023</li>
+                        </ul>
+                    </div>
+
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9.5 6.5v3h-3v-3h3M11 5H5v6h6V5zm-1.5 9.5v3h-3v-3h3M11 13H5v6h6v-6zm6.5-6.5v3h-3v-3h3M19 5h-6v6h6V5zm-6.5 9.5v3h-3v-3h3M13 13h-2v6h6v-6h-4z"/>
+                            </svg>
+                        </div>
+                        <h3 class="education-degree">Full Stack Web Development Bootcamp</h3>
+                        <p class="education-school">Coding Bootcamp</p>
+                        <p class="education-period">2023</p>
+                        <ul class="education-details">
+                            <li>600+ hours of hands-on coding</li>
+                            <li>Focus: MERN Stack, RESTful APIs, Database Design</li>
+                            <li>Capstone Project: E-commerce Platform</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="portfolio-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <defs>
+                                        <linearGradient id="taskGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="var(--color-primary)"/>
+                                            <stop offset="100%" stop-color="var(--color-primary-dark)"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <rect x="3" y="3" width="18" height="18" rx="2" fill="url(#taskGradient)" opacity="0.1"/>
+                                    <rect x="6" y="7" width="8" height="1.5" rx="0.75" fill="url(#taskGradient)"/>
+                                    <rect x="6" y="10" width="6" height="1.5" rx="0.75" fill="url(#taskGradient)" opacity="0.7"/>
+                                    <rect x="6" y="13" width="10" height="1.5" rx="0.75" fill="url(#taskGradient)" opacity="0.5"/>
+                                    <rect x="6" y="16" width="4" height="1.5" rx="0.75" fill="url(#taskGradient)" opacity="0.3"/>
+                                    <circle cx="18" cy="6" r="3" fill="var(--color-success)"/>
+                                    <path d="M16.5 6l1 1 2-2" stroke="white" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Task Management App</h3>
+                            <p class="project-description">
+                                A responsive web application for managing daily tasks with user authentication, 
+                                drag-and-drop functionality, and real-time updates.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-outline">Live Demo</a>
+                                <a href="#" class="btn btn-outline">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <defs>
+                                        <linearGradient id="sunGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#FFA726"/>
+                                            <stop offset="100%" stop-color="#FF9800"/>
+                                        </linearGradient>
+                                        <linearGradient id="cloudGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="var(--color-gray-300)"/>
+                                            <stop offset="100%" stop-color="var(--color-gray-400)"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <circle cx="8" cy="8" r="4" fill="url(#sunGradient)"/>
+                                    <g stroke="url(#sunGradient)" stroke-width="1.5" stroke-linecap="round">
+                                        <line x1="8" y1="1" x2="8" y2="3"/>
+                                        <line x1="8" y1="13" x2="8" y2="15"/>
+                                        <line x1="1" y1="8" x2="3" y2="8"/>
+                                        <line x1="13" y1="8" x2="15" y2="8"/>
+                                    </g>
+                                    <path d="M7 16c-2.5 0-4.5 2-4.5 4.5h13c0-2.5-2-4.5-4.5-4.5s-4.5-2-4.5-4.5" fill="url(#cloudGradient)" opacity="0.9"/>
+                                    <circle cx="18" cy="18" r="2" fill="var(--color-primary)" opacity="0.3"/>
+                                    <circle cx="20" cy="16" r="1.5" fill="var(--color-primary)" opacity="0.5"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Weather Dashboard</h3>
+                            <p class="project-description">
+                                Clean and intuitive weather application with location-based forecasts, 
+                                interactive charts, and responsive design.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">API Integration</span>
+                                <span class="tag">Chart.js</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-outline">Live Demo</a>
+                                <a href="#" class="btn btn-outline">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <defs>
+                                        <linearGradient id="cartGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="var(--color-secondary)"/>
+                                            <stop offset="100%" stop-color="#E64A19"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M3 3h2l.4 2H20l-3.6 7.2c-.2.4-.6.8-1 .8H8.1l-.2 1H17v2H6c-.6 0-1-.4-1-1 0-.2.1-.3.2-.4l2.4-4.4L4 5H2V3z" fill="url(#cartGradient)" opacity="0.8"/>
+                                    <circle cx="8" cy="20" r="1.5" fill="url(#cartGradient)"/>
+                                    <circle cx="17" cy="20" r="1.5" fill="url(#cartGradient)"/>
+                                    <rect x="9" y="8" width="2" height="4" rx="1" fill="var(--color-success)" opacity="0.7"/>
+                                    <rect x="12" y="7" width="2" height="5" rx="1" fill="var(--color-warning)" opacity="0.7"/>
+                                    <rect x="15" y="9" width="2" height="3" rx="1" fill="var(--color-primary)" opacity="0.7"/>
+                                    <circle cx="19" cy="5" r="2" fill="var(--color-success)"/>
+                                    <text x="19" y="7" text-anchor="middle" font-size="8" fill="white" font-weight="bold">3</text>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">E-commerce Platform</h3>
+                            <p class="project-description">
+                                Full-stack e-commerce solution with product catalog, shopping cart, 
+                                payment integration, and admin dashboard.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Django</span>
+                                <span class="tag">PostgreSQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-outline">Live Demo</a>
+                                <a href="#" class="btn btn-outline">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <p class="contact-description">
+                            I'm always interested in hearing about new opportunities and connecting 
+                            with fellow developers. Let's build something great together!
+                        </p>
+                        <div class="contact-links">
+                            <a href="mailto:hello@example.com" class="contact-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                </svg>
+                                hello@example.com
+                            </a>
+                            <a href="#" class="contact-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                                </svg>
+                                LinkedIn
+                            </a>
+                            <a href="#" class="contact-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Software Engineer. Built with passion and clean code.</p>
+        </div>
+    </footer>
+
+    <script src="./components/app.js"></script>
+</body>
+</html>
