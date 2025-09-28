@@ -2,15 +2,19 @@
 
 /* Enhanced avatar styling */
 .avatar-icon {
-    width: 120px;
-    height: 120px;
-    color: var(--color-gray-300);
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
     transition: var(--transition-normal);
 }
 
-.avatar-placeholder:hover .avatar-icon {
+.hero-avatar:hover .avatar-icon {
     transform: scale(1.05);
-    color: var(--color-primary);
+}
+
+.hero-avatar:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Project placeholder enhancements */
